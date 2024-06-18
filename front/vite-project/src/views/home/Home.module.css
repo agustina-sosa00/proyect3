@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+.sectionHome{
+    width: 100%;
+    height: 600px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../../assets/peluqueria.jpg');
+    background-size: cover;
+    display: flex;
+}
+
+.containerHome{
+    width: 80%;
+    height: 550px;
+    /* background-color: black; */
+    margin: 0 auto;
+    display: flex;
+}
+
+.tarjetaHome{
+    width: 90%;
+    height: 400px;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    /* border: 1px solid rgb(207, 200, 81); */
+    border-width: 4px; /* Define el ancho del borde */
+    border-style: solid;
+    border-image: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a) 1;
+    margin:  auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subDivHome{
+    width: 95%;
+    height: 360px;
+    border: 1px solid rgb(207, 200, 81);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tituloHome{
+    font-size: 6em;
+    /* color: #DFBD69; */
+    color: #ffd277;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Great Vibes", cursive;
+  font-weight: 400;
+}
+
+.pTituloHome{
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #c29846;
+}
+
+.pHome{
+    font-family: "Playfair Display", serif;
+    color: rgb(201, 195, 195);
+    text-align: center;
+    font-size: 25px;
+    margin:0 auto;
+    padding: 0 30px ;
+    /* letter-spacing: 2px; */
+}
+
+
+
+/* ------------------------------------------- */
+
+/* boton 2 */
+.Btn {
+    width: 140px;
+    height: 40px;
+    border: none;
+    /* border-radius: 10px; */
+    background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+    background-size: 250%;
+    background-position: left;
+    color: #ffd277;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 1s;
+    overflow: hidden;
+}
+  
+.Btn::before {
+    position: absolute;
+    content: "REGISTRATE";
+    color: #ffd277;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 97%;
+    height: 90%;
+    /* border-radius: 8px; */
+    transition-duration: 1s;
+    background-color: rgba(0, 0, 0, 0.842);
+    background-size: 200%;
+}
+  
+.Btn:hover {
+    background-position: right;
+    transition-duration: 1s;
+}
+  
+.Btn:hover::before {
+    background-position: right;
+    transition-duration: 1s;
+}
+  
+.Btn:active {
+    transform: scale(0.95);
+}
+    /* ------------------------------------------- */

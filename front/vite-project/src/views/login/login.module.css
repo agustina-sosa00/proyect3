@@ -1,0 +1,72 @@
+/* AGREGAR EN LA VISTA DONDE SE VA A VER, QUE EL 'CONTENEDIR' tenga diplayflex PARA QUE SE CENTRE EL FORM */
+.sectionLogin{
+    width: 100%;
+    height: 650px;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../../assets/peluqueria.jpg');
+    background-size: cover;
+    display: flex;
+  }
+  
+  .form{
+    width: 400px;
+    height: 450px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) ,url('https://img.freepik.com/foto-gratis/textura-marmol-negro-dorado_125540-1516.jpg?w=740&t=st=1710775558~exp=1710776158~hmac=b3938dd704d959acf62bc9b249f18e29bbbdadb0b8a11af0ac159ed3a428ba67');    border-width: 2px; /* Define el ancho del borde */
+    border-width: 3px; /* Define el ancho del borde */
+    border-style: solid;
+    border-image: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a) 1;
+}
+  
+
+  
+  .input{
+    width: 300px;
+    height: 40px;
+    margin: 5px auto;
+    border: 1px solid #ffd277;
+    color: rgb(207, 200, 81);
+    background: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0));
+    transition: box-shadow 0.4s; /* Añade una transición para que el cambio de sombra sea suave */
+  }
+  
+  input::placeholder{
+    color: rgb(199, 196, 135);
+  }
+  
+  input[type=submit]{
+    color: #ffd277;
+    width: 200px;
+    height: 50px;
+    margin: 10px auto;
+    border-width: 2px; /* Define el ancho del borde */
+    border-style: solid;
+    border-image: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a) 1;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    transition: box-shadow 0.3s; /* Añade una transición para que el cambio de sombra sea suave */
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover{
+    border-image: linear-gradient(to right, #ffd277,#77530a,#77530a,#ffd277,#77530a, #ffd277) 1;
+
+  }
+  
+  .input:focus{
+    outline: none; /* Elimina el contorno predeterminado del navegador */
+    box-shadow: 0 0 10px rgb(207, 200, 81); /* Añade una sombra dorada cuando el campo está enfocado */
+  }
+  
+  .tituloForm{
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffd277;
+    font-size: 25px;
+  }
+
+  .pError{
+    color: aliceblue;
+    font-size: 15px;
+  }
